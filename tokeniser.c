@@ -24,7 +24,7 @@ char **tokeniser(char *line)
 	}
 	temp2 = strtok(temp, " ");
 
-	while(temp2)
+	while (temp2)
 	{
 		tokens[i] = strdup(temp2);
 		temp2 = strtok(NULL, " ");
@@ -57,7 +57,7 @@ int no_of_args(char *line)
 		temp2 = strtok(NULL, " ");
 		args++;
 	}
-	free (temp);
-	free (temp2);
+	free(temp);
+	free(temp2);
 	return (args);
-}	
+}

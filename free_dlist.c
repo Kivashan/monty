@@ -2,7 +2,7 @@
 
 /**
  * free_dlist - frees memory for a doubly linked list
- * @head: first node in list
+ * @stack: first node in list
  *
  * Return: void
  */

@@ -10,7 +10,6 @@
 
 int opcode_arg_atoi(char **tokens, unsigned int line_number)
 {
-	extern int value;
 	value = atoi(tokens[1]);
 
 	if (value == 0 && tokens[1][0] == '0')

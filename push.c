@@ -12,7 +12,6 @@
 void push(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 {
 	stack_t *new, *temp;
-	extern int value; /* add to main.h and read_file*/
 
 	new = malloc(sizeof(stack_t));
 	if (!new)
@@ -22,7 +21,7 @@ void push(stack_t **stack, __attribute__((unused)) unsigned int line_number)
 	}
 
 	new->n = value;
-	
+
 	if (*stack == NULL)
 	{
 		new->next = NULL;

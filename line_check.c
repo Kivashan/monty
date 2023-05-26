@@ -3,7 +3,6 @@
 /**
  * line_check - checks if line is empty or if first
  * non-whitespace is the newline char
- * @buffer: line read from file
  * @tokens: an arry of pointers to strings
  *
  * Return: 1 if checks fail, 0 if checks true

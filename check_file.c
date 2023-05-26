@@ -15,7 +15,7 @@ int file_check(char *filename)
 	if (!(strstr(filename, ".m")) || stat(filename, &file_stat) == -1)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", filename);
-		exit (EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 
 	return (1);

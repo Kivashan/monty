@@ -13,7 +13,7 @@ int read_file(char *argv)
 	size_t buf_size;
 	FILE *fs;
 	int line = 0, retval;
-	extern stack_t *stack;
+	stack_t *stack;
 
 	/* open file*/
 	fs = fopen(argv, "r");
@@ -28,7 +28,7 @@ int read_file(char *argv)
 	{
 		char **tokens = NULL;
 
-		buffer[retval - 1] = '\0';	
+		buffer[retval - 1] = '\0';
 		tokens = tokeniser(buffer);
 		if (line_check(tokens) == 0)
 			continue;
